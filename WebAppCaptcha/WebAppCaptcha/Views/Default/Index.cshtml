@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@*1398/09/05*@
+
+<h2>Create By Mohammad Bnesaeed </h2>
+
+
+<h1>Captcha in ASP.NET MVC</h1>
+@{
+    using (Html.BeginForm("index", "Default"))
+    {
+
+        <p><img src="/Default/ShowCaptchaImage" /></p>
+        <p>Please enter the string as shown above:</p>
+        <p>@Html.TextBox("CaptchaText")</p>
+        <p><input type="submit" value="Submit" /></p>
+
+    }
+    <strong>@ViewBag.Message</strong>
+}
+
+
